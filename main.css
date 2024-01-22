@@ -1,0 +1,32 @@
+/* .float-container {
+    border: 3px solid #cb1919;
+    padding: 20px;
+
+
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    border: 2px solid blue;
+
+} */
+
+#container {
+    width: 80%;
+    /* background-color: #ffcc33; */
+    margin: auto;
+}
+#first {
+    width: 50%;
+    float: left;
+    
+        /* background-color: blue; */
+}
+#second {
+    width: 50%;
+    float: left;
+    
+    /* background-color: green; */
+}
