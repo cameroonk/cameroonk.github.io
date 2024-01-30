@@ -26,6 +26,52 @@
         img {
             width: 50%;
         }
+        text {
+            padding: 50px;
+            
+        }
+
+
+    .container {
+        position: relative;
+        width: 50%;
+    }
+
+    .image {
+    float: left;
+    display: block;
+    width: 50%;
+    height: auto;
+    }
+
+    .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: hotpink;
+    }
+
+    .container:hover .overlay {
+    opacity: 1;
+    }
+
+    .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    }
     </style>
 </head>
 
@@ -60,19 +106,37 @@
         <h2>Cameron Kasprzak</h2>
         <h3>Tuesdays 4:00 PM</h3>
         <a href="https://weglfm.com">weglfm</a><br>
-        <img src = "./pop2.png">
+        <!-- <img src = "./pop2.png"> -->
+        <div class = "container">
+            <img src = "./cameronk.png">
+            <div class = "overlay">
+                <div class = "text">Tuesdays 4 PM</div>
+            </div>
+        </div>
     </div>
 
 
     <div style = "font-family: Arial, Helvetica, sans-serif" id ="second">
-        <h1>Playlist</h1>
-        <h2 id = "date"></h2>
-        1. Rihanna <br>
-        2. La Rosalia <br>
-        3. Drake <br>
+        <h1>Playlist 1-29-24</h1>
+        <!-- <h2 id = "date"></h2> -->
+        <playlist class = "h2">
+        1. Walk Out to Winter - Aztec Camera <br>
+        2. The Pines - 070 Shake <br>
+        3. One Of Your Girls - Troye Sivan <br>
+        4. The Party & The After Party - The Weeknd <br>
+        5. After the Afterparty - Charli XCX, Lil Yachty
+        </playlist>
+        <h3>I missed my show the last few weeks so this week I just wanted to play some of the tunes I found over break. Either from my parents, tik tok, friends, or just my discover weekly.</h3>
     </div>
     
 </div>
+
+<!-- <div class="container">
+    <img src="./pop2.png" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Hello World</div>
+    </div>
+  </div> -->
 
 </body>
 
